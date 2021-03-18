@@ -1,0 +1,18 @@
+id,key,statistic,df,value,label
+"cache test exp 2",foodtype,F,"1,14",19.09,
+"cache test exp 2",group,F,"1,14",<3.27,
+"cache test exp 2",group & foodtype,F,"1,14",<3.27,
+"cache test exp 2",RI,F,"1,14",<3.27,
+"cache test exp 2",foodtype & RI,F,"1,14",<3.27,
+"cache test exp 2",group & RI,F,"1,14",<3.27,
+"cache test exp 2","group & foodtype & RI",F,"1,14",<3.27,
+"inspect test exp 2","group & foodtype & RI",F,"1,14",12.53,A
+"inspect test exp 2 RI 4",foodtype,F,"1,14",30.72,A
+"inspect test exp 2 RI 4",group,F,"1,14",14.10,
+"inspect test exp 2 RI 28",foodtype,F,"1,14",<1,
+"inspect test exp 2 RI 28",group & foodtype,F,"1,14",5.28,A
+"inspect test exp 2 group degrade",foodtype & RI,F,"1,7",11.57,
+"inspect test exp 2 group degrade RI 4",foodtype,F,"1,7",23.2,
+"inspect test exp 2 group degrade RI 28",foodtype,F,"1,7",2.54,
+"inspect test exp 2 group replenish",foodtype,F,"1,7",15.45,
+"first inspect test exp 2",group,Chisq,3,10.57,

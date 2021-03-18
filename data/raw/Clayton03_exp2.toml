@@ -1,0 +1,4 @@
+major_finding = "Birds that experience degraded crickets after 3 days reduce searching for crickets after 3 day RIs even at sites where they cached prior to the unexpected experience of degraded crickets."
+comments = "Some birds generalized to reduce searching for crickets after any retention interval (Replenish group, reversed, figure 4)."
+repetitions = 16
+foodtypes = ["Peanut", "Cricket"]

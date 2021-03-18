@@ -1,0 +1,11 @@
+id,key,statistic,df,value,label
+"Experiment a tray × trial","tray & trial",F,"5,90",3.1,
+"Experiment b tray × trial","tray & trial",F,"3,42",4.39,A
+"Experiment a tray × trial","trial",F,"5,90",1.83,
+"Experiment b tray × trial","trial",F,"3,42",<1.,
+"Experiment a, tray degrade","trial",F,"5,45",2.46,A
+"Experiment a, tray replenish","trial",F,"5,45",2.61,
+"Experiment a, trial 6","tray",F,"1,9",14.57,
+"Experiment b, tray pilfer","trial",F,"3,21",3.89,A
+"Experiment b, tray replenish","trial",F,"3,21",1.63,
+"Experiment b, trial 4","tray",F,"1,7",20.23,

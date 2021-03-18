@@ -1,0 +1,7 @@
+id,key,statistic,df,value,label
+"foodtype & tray","foodtype",F,"1,3",.66,
+"foodtype & tray","tray",F,"1,3",5.55,
+"Tray × foodtype interaction in trial 1","tray & foodtype",F,"1,3",3.0,A
+"Tray × foodtype interaction in trial 2","tray & foodtype",F,"1,3",14.24,A
+"Tray × foodtype interaction in trial 3","tray & foodtype",F,"1,3",2.258,
+"Tray × foodtype interaction in trial 3 without hunter","tray & foodtype",F,"1,2",15.429,A

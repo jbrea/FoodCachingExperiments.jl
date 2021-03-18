@@ -1,0 +1,4 @@
+major_finding = "The same search pattern as in experiments 1-3 is observed when the birds cache two types of food in the two sides of a caching tray at the same time: given the choice of a tray where the cached long ago they direct more searches to the unpreferred food and vice versa for short retention intervals."
+comments = ""
+repetitions = 16
+foodtypes = ["Peanut", "Mealworm"]

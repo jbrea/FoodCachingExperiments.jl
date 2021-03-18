@@ -1,0 +1,4 @@
+id,key,statistic,df,value,label
+overall,"prefed & foodtype",F,"1,3",12.4,A
+cache,"prefed & foodtype",F,"1,3",10.45,A
+eat,"prefed & foodtype",F,"1,3",9.8,A

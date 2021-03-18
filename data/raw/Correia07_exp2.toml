@@ -1,0 +1,4 @@
+major_finding = "The birds learn to cache more of the food type they will not be prefed on prior to recovery."
+comments = ""
+repetitions = 11
+foodtypes = ["Kibble", "Pinenut"]

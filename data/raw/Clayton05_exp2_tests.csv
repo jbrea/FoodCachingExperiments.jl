@@ -1,0 +1,20 @@
+id,key,statistic,df,value,label
+"group × foodtype first trial","group",F,"4,17",<1.,
+"group × foodtype first trial","group & foodtype",F,"4,17",<1.,
+"group × foodtype first trial","foodtype",F,"1,14",21.91,
+"Group × Food Type × Trial for replenish, consistent degrade and partial degrade","group & trial & foodtype",F,"14,63",5.08,
+"Group × Trial for worms","group & trial",F,"14,63",1.7,
+"Change in caching worms consistent degrade","trial",F,"7,63",4.39,A
+"Change in caching worms partial degrade","trial",F,"7,63",<1.06,A
+"Change in caching worms replenish","trial",F,"7,63",<1.06,A
+"no difference between worms cache by replenish and partial degrade in trials 3-8","group",F,"1,9",2.04,
+"more worms cache by consistent degrade than partial degrade in trials 3-8","group",F,"1,9",9.79,
+"Group × Trial for nuts","group & trial",F,"14,63",3.82,
+"Change in caching nuts consistent degrade","trial",F,"7,63",6.48,
+"Change in caching nuts partial degrade","trial",F,"7,63",<1.58,
+"Change in caching nuts replenish","trial",F,"7,63",<1.58,
+"more nuts cache by replenish than partial degrade in trials 4-8","group",F,"1,9",4.88,
+"more nuts cache by consistent degrade than replenish in trials 4-8","group",F,"1,9",13.86,
+"First trial pilfer","group",F,"3,14",<1.09,
+"First trial pilfer","foodtype",F,"1,14",21.91,
+"compare pilfer, degrade","treatment & consistent & foodtype & trial",F,"7,98",9.17,

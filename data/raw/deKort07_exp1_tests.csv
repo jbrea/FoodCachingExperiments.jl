@@ -1,0 +1,7 @@
+id,key,statistic,df,value,label
+"Experiment a","group",F,"1,14",1.26,A
+"Experiment b","group",F,"1,14",<1,A
+"Experiment a","trial",F,"5,70",1.9,A
+"Experiment b","trial",F,"5,70",<1,
+"Experiment a","group & trial",F,"5,70",<1,
+"Experiment b","group & trial",F,"5,70",1.57,

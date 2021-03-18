@@ -1,0 +1,9 @@
+prefed,action,foodtype,μ,sem,n
+"pinenut",eat,"pinenut",0.91,0.33,11
+"kibble",eat,"pinenut",6.82,1.84,11
+"both",eat,"pinenut",3.75,2.1,11
+"none",eat,"pinenut",8.64,2.25,11
+"pinenut",eat,"kibble",4.43,1.45,11
+"kibble",eat,"kibble",2.08,0.68,11
+"both",eat,"kibble",2.8,0.92,11
+"none",eat,"kibble",7.46,1.86,11

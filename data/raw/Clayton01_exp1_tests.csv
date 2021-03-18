@@ -1,0 +1,25 @@
+id,key,statistic,df,value,label
+"first inspect set 4 RI 4","group",Chisq,1,.05,
+"first inspect set 4 RI 28","group",Chisq,2,8.24,
+"first inspect set 4 RI 100","group",Chisq,2,12.99,
+"inspect test RI 4",foodtype,F,"1,13",15.24,
+"inspect test RI 4",group,F,"1,13",<3.71,
+"inspect test RI 4",group & foodtype,F,"1,13",<3.71,
+"first inspect test RI 4",group,Chisq,2,0.27,A
+"inspect test RI 28",foodtype,F,"1,11",<2.64,
+"inspect test RI 28",group,F,"1,11",<2.64,
+"inspect test RI 28",group & foodtype,F,"1,11",<2.64,
+"first inspect test RI 28",group,Chisq,2,9.65,A
+"inspect test RI 100",group & foodtype,F,"1,12",58.66,
+"first inspect test RI 100",group,Chisq,3,13.0,A
+"inspect test RI 100 degrade",foodtype,F,"1,6",40.39,
+"inspect test RI 100 replenish",foodtype,F,"1,6",21.,
+"cache test RI 4",group,F,"1,13",<3.81,
+"cache test RI 4",foodtype,F,"1,13",<3.81,
+"cache test RI 4",group & foodtype,F,"1,13",<3.81,
+"cache test RI 28",group,F,"1,11",<3.47,
+"cache test RI 28",foodtype,F,"1,11",<3.47,
+"cache test RI 28",group & foodtype,F,"1,11",<3.47,
+"cache test RI 100",group,F,"1,12",<2.75,
+"cache test RI 100",foodtype,F,"1,12",<2.75,
+"cache test RI 100",group & foodtype,F,"1,12",<2.75,

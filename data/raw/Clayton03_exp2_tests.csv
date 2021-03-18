@@ -1,0 +1,26 @@
+id,key,statistic,df,value,label
+"inspect degrade","condition & foodtype & RI",F,"1,6",7.44,A
+"inspect degrade RI 28",foodtype,F,"1,6",11.1,
+"inspect degrade RI 28","condition & foodtype",F,"1,6",<1,A
+"inspect degrade RI 76","condition & foodtype",F,"1,6",21.33,A
+"inspect degrade RI 76 reversed","foodtype",F,"1,6",13.5,
+"inspect degrade RI 76 consistent","foodtype",F,"1,6",8.17,
+"inspect degrade RI 76 peanut",condition,F,"1,6",12.77,
+"inspect degrade RI 76 cricket",condition,F,"1,6",1.88,
+"first inspectes degrade",condition,Chisq,2,8.0,
+"cache degrade",foodtype,F,"1,6",1.77,
+"cache degrade",condition,F,"1,6",1.46,
+"inspect replenish","condition & foodtype",F,"1,5",80.99,
+"inspect replenish",RI,F,"2,10",<3.46,
+"inspect replenish","foodtype & RI",F,"2,10",<3.46,
+"inspect replenish","condition & foodtype & RI",F,"2,10",<3.46,
+"inspect replenish RI 28","condition & foodtype",F,"1,5",>9.66,
+"inspect replenish RI 76","condition & foodtype",F,"1,5",>9.66,
+"inspect replenish RI 124","condition & foodtype",F,"1,5",>9.66,
+"inspect replenish reversed",foodtype,F,"1,5",10.25,
+"inspect replenish consistent",foodtype,F,"1,5",17.98,
+"inspect replenish peanut",condition,F,"1,5",11.52,
+"inspect replenish cricket",condition,F,"1,5",39.37,
+"first inspectes replenish",condition,Chisq,5,6,
+"cache replenish",foodtype,F,"1,5",2.44,
+"cache replenish",condition,F,"1,5",<1,

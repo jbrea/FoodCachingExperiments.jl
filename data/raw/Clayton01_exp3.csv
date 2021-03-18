@@ -1,0 +1,11 @@
+group,foodtype,action,trial,μ,sem,firstinspection,n
+degrade,mealworm,inspect,mc,5.9,1,0.,8
+degrade,cricket,inspect,mc,12,1.9,1.,8
+degrade,mealworm,inspect,cm,10,1.4,.75,8
+degrade,cricket,inspect,cm,6.4,.6,.25,8
+replenish,mealworm,inspect,mc,11.7,1.4,.875,8
+replenish,cricket,inspect,mc,8.5,1.,.125,8
+replenish,mealworm,inspect,cm,8.6,1.,.75,8
+replenish,cricket,inspect,cm,5.9,1.,.25,8
+,mealworm,cache,,18.8,3.2,,32
+,cricket,cache,,10.5,2.,,32

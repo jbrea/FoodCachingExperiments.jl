@@ -1,0 +1,4 @@
+major_finding = "Replication of experiment one showing additionally that consistent and partial pilfering has a similar effect on caching as degradation."
+comments = "For quite a few statistical tests we were not able to reconstruct the reported degrees of freedom."
+repetitions = 22
+foodtypes = ["Peanut", "Waxworm"]

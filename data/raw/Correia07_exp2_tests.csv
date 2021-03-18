@@ -1,0 +1,13 @@
+id,key,statistic,df,value,label
+"eat","foodtype",F,"1,9",17.93,
+"eat","group",F,"1,9",<1.,
+"eat","trial",F,"2,18",<1.,
+"eat","group & foodtype",F,"1,9",<1.,
+"eat","group & trial",F,"2,18",<1.,
+"eat","foodtype & trial",F,"2,18",<1.,
+"eat","group & foodtype & trial",F,"2,18",<1.,
+"cache","prefed",F,"1,7",<1.,
+"cache","group & prefed",F,"1,7",<1.,
+"trial 1: proportion cache","group",U,10,.11,A
+"trial 2: proportion cache","group",U,8,.04,A
+"trial 3: proportion cache","group",U,8,0.,A

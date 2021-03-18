@@ -1,0 +1,9 @@
+group,action,stage,μ,sem,n
+same,cache,1,12.25,1.6,12
+same,cache,2,1.0,0.6,12
+different,cache,1,13.8,1.5,12
+different,cache,2,9.6,0.9,12
+same,eat,1,13.7,1.4,12
+same,eat,2,0.5,0.2,12
+different,eat,1,14.2,1.4,12
+different,eat,2,7.5,1.0,12

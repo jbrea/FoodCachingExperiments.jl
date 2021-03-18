@@ -1,0 +1,17 @@
+id,key,statistic,df,value,label
+cache,foodtype,F,"1,14",11.56,
+cache,group,F,"1,14",<2.48,
+cache,trial,F,"1,14",<2.48,
+cache,"group & foodtype",F,"1,14",<2.48,
+cache,"group & trial",F,"1,14",<2.48,
+cache,"group & foodtype & trial",F,"1,14",<2.48,
+inspect,"group & foodtype & trial",F,"1,14",22.5,
+"inspect mc","group & foodtype",F,"1,14",30.76,A
+"inspect cm","group & foodtype",F,"1,14",<1,A
+"inspect cm","foodtype",F,"1,14",19.93,
+"inspect degrade","foodtype & trial",F,"1,7",59.94,A
+"inspect degrade mc",foodtype,F,"1,7",44.82,
+"inspect degrade cm",foodtype,F,"1,7",13.17,
+"inspect replenish","foodtype & trial",F,"1,7",<1,
+"inspect replenish",foodtype,F,"1,7",11.76,
+"first inspectes",group,Chisq,3,12.57,

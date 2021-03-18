@@ -1,0 +1,15 @@
+id,key,statistic,df,value,label
+cache,"group & foodtype",F,"1,14",7.41,
+cache,RI,F,"1,14",<4.09,
+cache,"group & RI",F,"1,14",<4.09,
+cache,"foodtype & RI",F,"1,14",<4.09,
+"cache mealworm",group,F,"1,14",5.85,
+"cache peanut",group,F,"1,14",<1,
+inspect,"group & foodtype & RI",F,"1,14",9.53,A
+"inspect 28","group & foodtype",F,"1,14",10.45,A
+"inspect 4",foodtype,F,"1,14",12.4,
+"inspect 4","group & foodtype",F,"1,14",3.51,A
+"inspect degrade","foodtype & RI",F,"1,7",14.99,
+"inspect degrade 4",foodtype,F,"1,7",8.46,
+"inspect degrade 28",foodtype,F,"1,7",14.78,
+"first inspectes",group,Chisq,3,7,

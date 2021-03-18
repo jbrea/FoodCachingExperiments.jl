@@ -1,0 +1,9 @@
+group,action,μ,sem,n
+none,cache,16.5,1.4,8
+same,cache,9,0.9,8
+different,cache,15,1.7,8
+none,eat,11.5,1.0,8
+same,eat,0.3,0.1,8
+different,eat,6.6,0.4,8
+nothing,cache,13.9,2.41,23
+prefed,cache,7.7,1.82,23

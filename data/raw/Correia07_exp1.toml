@@ -1,0 +1,4 @@
+major_finding = "After eating to satiety a certain type of food, birds eat less of this type of food."
+comments = ""
+repetitions = 11
+foodtypes = ["Pinenut", "Kibble"]

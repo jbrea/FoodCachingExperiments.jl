@@ -1,0 +1,4 @@
+id,key,statistic,df,value,label
+inspect,"group & RI",F,"1,10",13.03,A
+inspect,"group & RI & set",F,"1,10",11.24,A
+first inspect trial 8,group,Chisq,3,9.08,A

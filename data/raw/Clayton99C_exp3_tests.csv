@@ -1,0 +1,8 @@
+id,key,statistic,df,value,label
+"cache","group",F,"2,18",11.95,A
+"cache","foodtype",F,"1,18",4.0,
+"cache","group & foodtype",F,"2,18",<1,
+"eat","group",F,"2,18",122.,A
+"eat","foodtype",F,"1,18",5.12,
+"eat","group & foodtype",F,"2,18",2.24,
+"within-subject prefeeding","group",F,"1,22",2.33^2,A

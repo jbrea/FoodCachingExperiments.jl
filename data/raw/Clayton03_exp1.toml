@@ -1,0 +1,4 @@
+major_finding = "Having experienced that crickets are fresh after 1 day but degraded after 4 days, the birds still search crickets after 2 or 3 days, but not after 5 days."
+comments = ""
+repetitions = 16
+foodtypes = ["Peanut", "Mealworm", "Cricket"]

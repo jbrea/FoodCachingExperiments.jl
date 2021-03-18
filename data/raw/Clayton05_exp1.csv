@@ -1,0 +1,37 @@
+group,trial,action,foodtype,μ,n
+consistent degrade,1,cache,nuts,0.506,4
+consistent degrade,1,cache,worms,8.0098,4
+consistent degrade,2,cache,nuts,2.329,4
+consistent degrade,2,cache,worms,4.5423,4
+consistent degrade,3,cache,nuts,9.9565,4
+consistent degrade,3,cache,worms,1.8557,4
+consistent degrade,4,cache,nuts,15.4519,4
+consistent degrade,4,cache,worms,1.5613,4
+consistent degrade,5,cache,nuts,7.9693,4
+consistent degrade,5,cache,worms,1.36,4
+consistent degrade,6,cache,nuts,12.4733,4
+consistent degrade,6,cache,worms,1.3384,4
+partial degrade,1,cache,nuts,0.2865,4
+partial degrade,1,cache,worms,8.2604,4
+partial degrade,2,cache,nuts,3.0696,4
+partial degrade,2,cache,worms,13.6216,4
+partial degrade,3,cache,nuts,0.8186,4
+partial degrade,3,cache,worms,9.0197,4
+partial degrade,4,cache,nuts,1.0027,4
+partial degrade,4,cache,worms,15.0705,4
+partial degrade,5,cache,nuts,0.4707,4
+partial degrade,5,cache,worms,11.1061,4
+partial degrade,6,cache,nuts,1.3097,4
+partial degrade,6,cache,worms,9.352,4
+replenish,1,cache,nuts,2.9828,4
+replenish,1,cache,worms,15.9433,4
+replenish,2,cache,nuts,5.9357,4
+replenish,2,cache,worms,15.8592,4
+replenish,3,cache,nuts,8.999,4
+replenish,3,cache,worms,12.7189,4
+replenish,4,cache,nuts,10.9192,4
+replenish,4,cache,worms,15.2962,4
+replenish,5,cache,nuts,9.1932,4
+replenish,5,cache,worms,17.0192,4
+replenish,6,cache,nuts,8.3921,4
+replenish,6,cache,worms,9.9356,4

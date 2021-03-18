@@ -1,0 +1,17 @@
+id,key,statistic,df,value,label
+"first inspectes RI 28 Clayton03 exp1",group,FisherExactTest,8,>0.5,
+"first inspectes RI 52 Clayton03 exp1",group,FisherExactTest,8,>0.5,
+"first inspectes RI 76 Clayton03 exp1",group,FisherExactTest,16,>0.5,
+"first inspectes RI 100 Clayton03 exp1",group,FisherExactTest,8,.01,
+"first inspectes RI 124 Clayton03 exp1",group,FisherExactTest,8,.02,
+"inspect RI 28 Clayton03 exp1",group,F,"1,11",<2.13,
+"inspect RI 52 Clayton03 exp1",group,F,"1,11",<2.13,A
+"inspect RI 76 Clayton03 exp1",group,F,"1,11",<2.13,A
+"inspect RI 100 Clayton03 exp1",group,F,"1,11",>7.01,
+"inspect RI 124 Clayton03 exp1",group,F,"1,11",>7.01,A
+"inspect Clayton03 exp1",group,F,"1,44",4.4,
+"inspect Clayton03 exp1","group & RI",F,"4,44",1.63,
+"inspect degrade Clayton03 exp1",RI,F,"4,44",3.86,
+"inspect replenish Clayton03 exp1",RI,F,"4,44",<1,
+"cache Clayton03 exp1",foodtype,F,"1,11",1.71,
+"cache Clayton03 exp1",group,F,"1,11",<1,

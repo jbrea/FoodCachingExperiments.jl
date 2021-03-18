@@ -1,0 +1,12 @@
+id,key,statistic,df,value,label
+"group × tray","group & tray",F,"1,6",10.04,
+"group × tray","tray",F,"1,6",<1.,
+"group × tray","group",F,"1,6",<1.,
+"experimental group caches more in B than control","group",F,"1,6",9.26,A
+"number of worms cache in A is the same across groups","group",F,"1,6",3.59,
+"experimental group cache same numbers in A and B","tray",F,"1,6",2.71,
+"control group caches more in A than in B","tray",F,"1,6",8.03,A
+"Effect of tray on the worms cache","tray",F,"2,6",7.73,A
+"more in B than A","tray",F,"1,3",22.62,
+"more in C than A","tray",F,"1,3",12.37,
+"same in B and C","tray",F,"1,3",<1.,

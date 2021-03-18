@@ -1,0 +1,21 @@
+id,key,statistic,df,value,label
+trial 1,foodtype,F,"1,10",<1,
+trial 1,"group & foodtype",F,"1,10",<1,
+overall,"group & foodtype & trial",F,"9,90",1.99,A
+consistent degrade,"foodtype & trial",F,"9,36",2.75,A
+consistent degrade,treatment,F,"1,4",<1,
+consistent degrade,"treatment & foodtype",F,"1,4",<1,
+consistent degrade,"treatment & trial",F,"9,36",<1.22,
+consistent degrade trial 1,foodtype,F,"1,4",<7.7,
+consistent degrade trial 2,foodtype,F,"1,4",<7.7,
+consistent degrade trial 3,foodtype,F,"1,4",<7.7,
+consistent degrade trial 4,foodtype,F,"1,4",>7.8,
+consistent degrade trial 5,foodtype,F,"1,4",<7.7,
+consistent degrade trial 6,foodtype,F,"1,4",>7.8,
+consistent degrade trial 7,foodtype,F,"1,4",>7.8,
+consistent degrade trial 8,foodtype,F,"1,4",>7.8,
+consistent degrade trial 9,foodtype,F,"1,4",<7.7,
+consistent degrade trial 10,foodtype,F,"1,4",<7.7,
+partial degrade,"treatment & foodtype",F,"1,6",7.07,
+partial degrade,foodtype,F,"1,6",<1,
+partial degrade,"foodtype & trial",F,"9,54",<1,A

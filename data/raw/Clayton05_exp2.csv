@@ -1,0 +1,81 @@
+group,trial,action,foodtype,μ,n
+consistent degrade,1.0,cache,nuts,3.0319,4
+consistent degrade,1.0,cache,worms,14.1134,4
+consistent degrade,2.0,cache,nuts,4.7349,4
+consistent degrade,2.0,cache,worms,9.8754,4
+consistent degrade,3.0,cache,nuts,7.4912,4
+consistent degrade,3.0,cache,worms,3.3831,4
+consistent degrade,4.0,cache,nuts,8.3093,4
+consistent degrade,4.0,cache,worms,0.5144,4
+consistent degrade,5.0,cache,nuts,11.0235,4
+consistent degrade,5.0,cache,worms,2.0488,4
+consistent degrade,6.0,cache,nuts,10.3037,4
+consistent degrade,6.0,cache,worms,1.0341,4
+consistent degrade,7.0,cache,nuts,11.0376,4
+consistent degrade,7.0,cache,worms,1.5572,4
+consistent degrade,8.0,cache,nuts,8.2953,4
+consistent degrade,8.0,cache,worms,0.5004,4
+consistent pilfer,1.0,cache,nuts,4.2286,5
+consistent pilfer,1.0,cache,worms,9.0673,5
+consistent pilfer,2.0,cache,nuts,1.5989,5
+consistent pilfer,2.0,cache,worms,6.3955,5
+consistent pilfer,3.0,cache,nuts,4.7546,5
+consistent pilfer,3.0,cache,worms,6.6059,5
+consistent pilfer,4.0,cache,nuts,1.7882,5
+consistent pilfer,4.0,cache,worms,3.871,5
+consistent pilfer,5.0,cache,nuts,4.9439,5
+consistent pilfer,5.0,cache,worms,3.6816,5
+consistent pilfer,6.0,cache,nuts,6.7532,5
+consistent pilfer,6.0,cache,worms,0.8415,5
+consistent pilfer,7.0,cache,nuts,7.784,5
+consistent pilfer,7.0,cache,worms,0.4208,5
+consistent pilfer,8.0,cache,nuts,6.5849,5
+consistent pilfer,8.0,cache,worms,0.6522,5
+partial degrade,1.0,cache,nuts,2.5281,4
+partial degrade,1.0,cache,worms,12.5983,4
+partial degrade,2.0,cache,nuts,2.2963,4
+partial degrade,2.0,cache,worms,12.0927,4
+partial degrade,3.0,cache,nuts,4.0449,4
+partial degrade,3.0,cache,worms,16.5801,4
+partial degrade,4.0,cache,nuts,0.2739,4
+partial degrade,4.0,cache,worms,14.4944,4
+partial degrade,5.0,cache,nuts,0.2739,4
+partial degrade,5.0,cache,worms,9.059,4
+partial degrade,6.0,cache,nuts,0.4846,4
+partial degrade,6.0,cache,worms,10.3652,4
+partial degrade,7.0,cache,nuts,0.8006,4
+partial degrade,7.0,cache,worms,12.8933,4
+partial degrade,8.0,cache,nuts,0.0,4
+partial degrade,8.0,cache,worms,14.1152,4
+partial pilfer,1.0,cache,nuts,5.5485,5
+partial pilfer,1.0,cache,worms,10.2743,5
+partial pilfer,2.0,cache,nuts,4.6414,5
+partial pilfer,2.0,cache,worms,9.0506,5
+partial pilfer,3.0,cache,nuts,8.1857,5
+partial pilfer,3.0,cache,worms,14.3038,5
+partial pilfer,4.0,cache,nuts,1.1603,5
+partial pilfer,4.0,cache,worms,7.616,5
+partial pilfer,5.0,cache,nuts,3.0169,5
+partial pilfer,5.0,cache,worms,8.2489,5
+partial pilfer,6.0,cache,nuts,1.1814,5
+partial pilfer,6.0,cache,worms,9.4093,5
+partial pilfer,7.0,cache,nuts,1.7932,5
+partial pilfer,7.0,cache,worms,9.6414,5
+partial pilfer,8.0,cache,nuts,6.6034,5
+partial pilfer,8.0,cache,worms,9.0506,5
+replenish,1.0,cache,nuts,4.5216,4
+replenish,1.0,cache,worms,14.1149,4
+replenish,2.0,cache,nuts,2.2676,4
+replenish,2.0,cache,worms,6.7697,4
+replenish,3.0,cache,nuts,4.9364,4
+replenish,3.0,cache,worms,9.8171,4
+replenish,4.0,cache,nuts,3.5028,4
+replenish,4.0,cache,worms,8.8254,4
+replenish,5.0,cache,nuts,4.0257,4
+replenish,5.0,cache,worms,8.5068,4
+replenish,6.0,cache,nuts,3.2864,4
+replenish,6.0,cache,worms,7.7044,4
+replenish,7.0,cache,nuts,2.505,4
+replenish,7.0,cache,worms,7.9959,4
+replenish,8.0,cache,nuts,5.9311,4
+replenish,8.0,cache,worms,5.8049,4

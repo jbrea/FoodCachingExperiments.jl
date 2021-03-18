@@ -1,0 +1,4 @@
+major_finding = "Prefeeding of powdered, non-cacheable food leads to a strong reduction in eating of the same food, a slight reduction in eating different food and a small reduction in caching same food."
+comments = "In constrast to experiment 1, pre-feeding powdered peanuts lead to a reduction in caching peanuts but not to a reduction in caching the other food."
+repetitions = 24
+foodtypes = ["Peanut", "Kibble"]

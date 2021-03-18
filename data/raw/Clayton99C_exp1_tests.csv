@@ -1,0 +1,14 @@
+id,key,statistic,df,value,label
+"prefeding effect on stones cache","group",F,"1,20",7.36,
+"prefeding effect on peanuts cache","group",F,"1,20",<1.,
+"precaching effect on stones cache","stage",F,"1,5",3.16,
+"precaching effect on peanuts cache","stage",F,"1,20",<1.,
+"interactions","group",F,"3,16",11.34,A
+"interactions","foodtype",F,"1,16",7.91,A
+"interactions","group & foodtype",F,"3,16",12.64,A
+"interactions","order",F,"1,16",1.,
+"interactions","order & foodtype",F,"1,16",1.51,
+"interactions","group & order",F,"3,16",<2.45,
+"interactions","group & order & foodtype",F,"3,16",<2.45,
+"stones cache in stage 2","group",F,"3,20",8.95,
+"peanuts cache in stage 2","group",F,"3,20",11.52,

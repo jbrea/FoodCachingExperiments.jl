@@ -1,0 +1,4 @@
+major_finding = "Birds reduce caching foodtypes that are always degraded at recovery, but keep caching when the foodtypes are fresh after some retention intervals."
+comments = ""
+repetitions = 12
+foodtypes = ["Peanut", "Waxworm"]

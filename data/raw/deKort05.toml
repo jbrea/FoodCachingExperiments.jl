@@ -1,0 +1,4 @@
+major_finding = "If palatability improves over time (ripening) the birds search more after the longer retention intervals than after the shorter retention interval and vice versa if the food items degrade over time."
+comments = "For the Group x Retention Interval x Trail interaction we assume that the correct degree of freedoms would be 7,70."
+repetitions = 12
+foodtypes = ["Peanut", "Waxworm"]

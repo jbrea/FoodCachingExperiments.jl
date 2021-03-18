@@ -1,0 +1,8 @@
+"exp","group",action,"tray","μ","sem",n
+"a","control",cache,"A",11.0,5.2,4
+"a","control",cache,"B",0.25,0.25,4
+"a","experimental",cache,"A",1.0,0.7,4
+"a","experimental",cache,"B",7.25,2.3,4
+"b","experimental",cache,"A",1.75,0.7,4
+"b","experimental",cache,"B",5.25,0.5,4
+"b","experimental",cache,"C",5.0,0.86,4

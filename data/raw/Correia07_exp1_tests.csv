@@ -1,0 +1,6 @@
+id,key,statistic,df,value,label
+interaction,"prefed & foodtype",F,"3,30",8.49,A
+"prefed pinenut","foodtype",F,"1,10",6.96,A
+"prefed kibble","foodtype",F,"1,10",5.12,A
+"prefed both","foodtype",F,"1,10",<1.,
+"prefed none","foodtype",F,"1,10",<1.,
