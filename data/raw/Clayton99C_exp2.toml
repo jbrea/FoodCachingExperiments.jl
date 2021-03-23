@@ -1,4 +1,4 @@
 major_finding = "Precaching and prefeeding produced a much greater reduction in subsequent caching and eating of the same food compared with a different food."
 comments = ""
-repetitions = 24
+nbirds = 24
 foodtypes = ["Peanut", "Kibble"]

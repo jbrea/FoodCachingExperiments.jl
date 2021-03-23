@@ -1,4 +1,4 @@
 major_finding = "Birds direct their searches to sites from which they did not yet recover the food items and contain food that is different from what they had just been prefed on."
 comments = ""
-repetitions = 18
+nbirds = 18
 foodtypes = ["Peanut", "Kibble"]

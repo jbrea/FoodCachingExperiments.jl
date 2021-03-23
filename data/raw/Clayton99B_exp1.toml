@@ -1,4 +1,4 @@
 major_finding = "The birds learned that their preferred food perished in the length of time since caching whereas their less preferred food did not: after some training trials, birds in the degrade group searched more at sites where they had previously cached their preferred food than at sites where they had previously cached their less preferred food after a retention interval of 4 hours and vice versa after a retention interval of 128 hours."
 comments = "Birds in the degrade group cached progressively more wax worms than peanuts during training; a pattern not seen in Clayton05 experiment 1 where they continued to cache at roughly the same level."
-repetitions = 24
+nbirds = 24
 foodtypes = ["Peanut", "Waxworm"]

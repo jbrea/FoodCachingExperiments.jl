@@ -1,4 +1,4 @@
 major_finding = "The birds learn not to search for their preferred food after retention intervals where they experienced the preferred food to be degraded."
 comments = "The choices between peanuts and waxworms or peanuts and crickets were investigated here. There was no significant effect in the analysis of the overall searches for the intermediate retention interval, but a significant difference in between the patterns of first searches shown by the two groups."
-repetitions = 16
+nbirds = 16
 foodtypes = ["Peanut", "Mealworm", "Cricket"]

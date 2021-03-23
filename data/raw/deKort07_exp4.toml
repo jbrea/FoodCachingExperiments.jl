@@ -1,4 +1,4 @@
 major_finding = "Rather than caching in rewarded locations, the birds learned to avoid the unrewarded ones."
 comments = ""
-repetitions = 12
+nbirds = 12
 foodtypes = ["Waxworm"]

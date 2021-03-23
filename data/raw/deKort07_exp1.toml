@@ -1,4 +1,4 @@
 major_finding = "In the absense of alternative food items to cache, birds continue to cache mealworms, even if they are degraded or pilfered before recovery."
 comments = "The caching rate during experiment 1b was much significantly lower than during experiment 1a."
-repetitions = 32
+nbirds = 32
 foodtypes = ["Mealworm"]

@@ -1,4 +1,4 @@
 major_finding = "Birds cached both foods in equal amounts in both trays in trial 1 but then developed a differential preference between the trays, preferentially caching in each tray the type of food that they would desire when retrieving from it."
 comments = "Since it is unclear how the tests for the overall reduction in caching and the trial × tray × foodtype were performed, we omitted these tests. This experiment used Eurasian Jays."
-repetitions = 4
+nbirds = 4
 foodtypes = ["Peanut", "SuetPellet"]

@@ -1,4 +1,4 @@
 major_finding = "Also when the birds cache in two sides of the same ice-cube tray they adapt their behaviour as in experiment 1."
 comments = ""
-repetitions = 19
+nbirds = 19
 foodtypes = ["Waxworm", "Peanut"]

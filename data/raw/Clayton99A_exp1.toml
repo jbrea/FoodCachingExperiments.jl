@@ -1,4 +1,4 @@
 major_finding = "Birds inspect preferentially caching sites where the previously cached food is of different type than the one they had been satied on prior to recovery."
 comments = ""
-repetitions = 14
+nbirds = 14
 foodtypes = ["Kibble", "Peanut"]

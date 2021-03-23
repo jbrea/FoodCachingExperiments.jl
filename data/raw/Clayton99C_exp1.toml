@@ -1,4 +1,4 @@
 major_finding = "Neither prefeeding nor precaching alone had a major impact on the birds’ subsequent propensity to cache peanuts or stones, but the combination of prefeeding and precaching in stage 1 significantly reduced the birds’ propensity to cache in stage 2."
 comments = ""
-repetitions = 24
+nbirds = 24
 foodtypes = ["Peanut", "Stone"]

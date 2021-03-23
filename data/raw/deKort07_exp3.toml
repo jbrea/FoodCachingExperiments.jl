@@ -1,4 +1,4 @@
 major_finding = "Birds reduced caching in pilfered trays, even when the caching trays were available sequentially."
 comments = ""
-repetitions = 7
+nbirds = 7
 foodtypes = ["Waxworm"]

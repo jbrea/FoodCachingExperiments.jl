@@ -1,4 +1,4 @@
 major_finding = "Confirming experiment 1, birds search their preferred food after a short retention interval, where both food types are expected to be fresh, but they reverse this behaviour after a longer retention interval, where the preferred food is expected to be degraded."
 comments = "The choice between mealworms (preferred) and crickets was investigated."
-repetitions = 16
+nbirds = 16
 foodtypes = ["Peanut", "Mealworm", "Cricket"]

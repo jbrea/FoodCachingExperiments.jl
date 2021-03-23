@@ -15,7 +15,7 @@ struct Experiment{name, A, T}
     comments::String
     data::DataFrame
     tests::Dict{String,TestSummary}
-    repetitions::Int
+    nbirds::Int
     foodtypes::Vector{Food}
 end
 function Experiment{name}(a::A, t::T, args...) where {name, A, T}
@@ -23,8 +23,9 @@ function Experiment{name}(a::A, t::T, args...) where {name, A, T}
 end
 
 name(::Experiment{N}) where N = N
-repetitions(exp::Experiment) = exp.repetitions
+nbirds(exp::Experiment) = exp.nbirds
 foodtypes(exp::Experiment) = exp.foodtypes
+target(exp::Experiment) = exp.target
 
 default_keycols(x) = setdiff(names(x), ["μ", "sem", "firstinspection", "n"])
 extract(data, da) = convert(Vector{Float64}, vcat([data[idx, c] for (c, idx) in da]...))
@@ -44,11 +45,11 @@ function results(da::Base.RefValue, data, tests, e::Experiment{K}) where K
     target = extract(targetdf, da[])
     for test in tests.tests
         targetdf = e.tests[test.id].df
+        append!(target, significancecode.(e.tests[test.id].pvalues))
         a = e.tests[test.id].accessor
-        isassigned(a) || break
+        isassigned(a) || continue
         computeddf = df(a[], test.content, nothing)
         targetdf == computeddf || @warn K test.id targetdf computeddf
-        append!(target, significancecode.(e.tests[test.id].pvalues))
     end
     e.target[] = target
     results(da[], data, tests, e)

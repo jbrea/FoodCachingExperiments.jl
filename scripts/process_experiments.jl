@@ -6,7 +6,7 @@ using Pkg
 Pkg.activate(joinpath(@__DIR__, ".."))
 using TOML, CSV, FoodCachingExperiments, DataFramesMeta, Distributions, BSON, CodecZstd
 import FoodCachingExperiments: EXPERIMENTS, Experiment, TestSummary, Food,
-       default_keycols
+       default_keycols, bsave
 for foodtype in instances(Food)
     eval(:(import FoodCachingExperiments: $(Symbol(foodtype))))
 end
@@ -27,12 +27,14 @@ function load_experiment(name; datadir = DATADIR, run = true)
                           haskey(meta, "comments") ?
                           meta["comments"] : (@warn("$name misses comments"); ""),
                           sort!(data, default_keycols(data)),
-                          tests, meta["repetitions"],
+                          tests, meta["nbirds"],
                           eval.(Meta.parse.(meta["foodtypes"])))
     if run
-        data = run!(ex, fill(DummyModel(), ex.repetitions))
+        data = run!(ex, fill(DummyModel(), ex.nbirds))
         res = results(ex, data)
-        dropref(ex)
+        ex = dropref(ex)
+        length(res) == length(target(ex)) || @warn "$name: result and target have different lengths"
+        ex
     else
         ex
     end
@@ -93,7 +95,7 @@ function dropref(e::Experiment{name}) where name
                      e.comments,
                      e.data,
                      dropref(e.tests),
-                     e.repetitions,
+                     e.nbirds,
                      e.foodtypes)
 end
 
@@ -121,12 +123,9 @@ EXPERIMENTS[:Clayton0103] = Experiment{:Clayton0103}(Base.RefValue{Any}(),
 data = run!(EXPERIMENTS[:Clayton0103], fill(DummyModel(), 16))
 res = results(EXPERIMENTS[:Clayton0103], data)
 EXPERIMENTS[:Clayton0103] = dropref(EXPERIMENTS[:Clayton0103])
+length(res) == length(target(EXPERIMENTS[:Clayton0103])) || @warn "Clayton0103: result and target have different lengths"
 for e in FoodCachingExperiments.CLAYTON0103_EXPERIMENTS
     EXPERIMENTS[e] = dropref(EXPERIMENTS[e])
 end
 
-open(joinpath(DATADIR, "..", "processed", "experiments.bson.zstd"), "w") do f
-    s = ZstdCompressorStream(f)
-    bson(s, EXPERIMENTS)
-    close(s)
-end
+bsave(joinpath(DATADIR, "..", "processed", "experiments"), EXPERIMENTS)

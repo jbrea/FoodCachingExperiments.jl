@@ -1,4 +1,4 @@
 major_finding = "Birds cache more items of the food type that is different to the one they experienced to have available in the morning in a given compartment."
 comments = ""
-repetitions = 9
+nbirds = 9
 foodtypes = ["Peanut", "Kibble"]

@@ -1,4 +1,4 @@
 major_finding = "Birds showed specific satiety by eating and caching less of the pre-fed food than the non-prefed food."
 comments = "This experiment is similar to Correia07 exp1 but with Eurasian Jays instead of Western Scrub Jays."
-repetitions = 4
+nbirds = 4
 foodtypes = ["Peanut", "SuetPellet"]

@@ -1,4 +1,4 @@
 major_finding = "The birds reduce caching items of the food type that was consistently degraded, even if the shortest retention interval was longer than two days."
 comments = ""
-repetitions = 16
+nbirds = 16
 foodtypes = ["Peanut", "Mealworm"]

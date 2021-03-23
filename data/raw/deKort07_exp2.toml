@@ -1,4 +1,4 @@
 major_finding = "Birds learn to reduce caching in sites where they always found their caches pilfered or the food items degraded, provided they had alternative caching locations."
 comments = "The birds learned to reduce caching on one side of the cage despite trial-unique configuration of Lego Duplo blocks surrounding the ice cube tray, indicating that they generalized based on the side of the cage and not based on the local visual appearance of the caching site."
-repetitions = 18
+nbirds = 18
 foodtypes = ["Mealworm"]
