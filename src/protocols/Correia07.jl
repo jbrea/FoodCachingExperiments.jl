@@ -118,7 +118,7 @@ function statistical_tests(exp::Experiment{:Correia07_exp2}, data)
                     push!(tests, Test("trial $i: proportion cache",
                                       NoTest("no caching at all"),
                                       exp.tests,
-                                      length(_siglevels) + 1.))
+                                      length(SIGLEVELS) + 1.))
                 end
             end
         end
