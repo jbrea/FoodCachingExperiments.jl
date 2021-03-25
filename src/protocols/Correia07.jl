@@ -113,12 +113,12 @@ function statistical_tests(exp::Experiment{:Correia07_exp2}, data)
                     push!(tests, Test("trial $i: proportion cache",
                                       NoTest("no caching in same condition"),
                                       exp.tests,
-                                      sigcodedistance(exp.tests["trial $i: proportion cache"].pvalues[1], 0)))
+                                      [1.]))
                 else
                     push!(tests, Test("trial $i: proportion cache",
                                       NoTest("no caching at all"),
                                       exp.tests,
-                                      length(SIGLEVELS) + 1.))
+                                      [1.]))
                 end
             end
         end
