@@ -25,6 +25,7 @@ statistical_tests(name::Symbol, data) = statistical_tests(EXPERIMENTS[name], dat
 results(name::Symbol, data) = results(EXPERIMENTS[name], data)
 nbirds(name::Symbol) = nbirds(EXPERIMENTS[name])
 target(name::Symbol) = target(EXPERIMENTS[name])
+foodtypes(name::Symbol) = foodtypes(EXPERIMENTS[name])
 
 function __init__()
     filename = joinpath(@__DIR__, "..", "data", "processed", "experiments.bson.zstd")
