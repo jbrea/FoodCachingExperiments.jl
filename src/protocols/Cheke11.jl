@@ -7,7 +7,7 @@
 # Wiggins and Ainsley were fed with raisins instead of suet pellets. For
 # simplicity I use suet pellets for all birds in this protocol.
 
-function aggregate(::Experiment{:Cheke11_specsat}, data)
+function _summarize(::Experiment{:Cheke11_specsat}, data)
 	combine(groupby(data, [:prefed, :action, :foodtype]),
 				df -> DataFrame(μ = mean(df.items),
                                 sem = sem(float.(df.items)),
@@ -78,7 +78,7 @@ function getfraction_Cheke11_planning(data)
 	end
 	df
 end
-function aggregate(::Experiment{:Cheke11_planning}, data)
+function _summarize(::Experiment{:Cheke11_planning}, data)
 	combine(groupby(data, [:trial, :foodtype, :tray, :action]),
 				df -> DataFrame(μ = mean(df.items),
                                 sem = sem(float.(df.items)),

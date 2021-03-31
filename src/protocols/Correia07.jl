@@ -2,7 +2,7 @@
 # Scrub-Jays Anticipate Future Needs Independently of Their Current Motivational
 # State, Current Biology 17 (10), 856-861, http://dx.doi.org/10.1016/j.cub.2007.03.063
 #
-function aggregate(::Experiment{:Correia07_exp1}, results)
+function _summarize(::Experiment{:Correia07_exp1}, results)
 	combine(groupby(results, [:prefed, :action, :foodtype]),
 				 df -> DataFrame(μ = mean(df.count), sem = sem(df.count)))
 end
@@ -66,7 +66,7 @@ function run!(exp::Experiment{:Correia07_exp1}, models; N = 11)
 	results
 end
 
-function aggregate(::Experiment{:Correia07_exp2}, results)
+function _summarize(::Experiment{:Correia07_exp2}, results)
 	combine(groupby(results, [:trial, :group, :foodtype, :action]),
 				 df -> DataFrame(μ = mean(df.count), sem = sem(df.count)))
 end

@@ -6,7 +6,7 @@
 # Clayton, N. S., Dickinson, A. (1998). Episodic-like memory during cache
 # recovery by scrub jays. Nature, 395(6699), 272–274.
 
-function aggregate(::Experiment{:Clayton99B_exp1}, results)
+function _summarize(::Experiment{:Clayton99B_exp1}, results)
     inspect = combine(groupby(@where(results, :action .== "inspect"),
                               [:group, :trial, :RI, :action, :foodtype]),
                 df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),
@@ -192,7 +192,7 @@ function run!(::Experiment{:Clayton99B_exp1}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton99B_exp2}, results)
+function _summarize(::Experiment{:Clayton99B_exp2}, results)
     inspect = combine(groupby(@where(results, :action .== "inspect"),
                               [:group, :trial, :order, :action, :foodtype]),
                 df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),

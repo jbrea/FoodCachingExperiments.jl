@@ -3,7 +3,7 @@ module FoodCachingExperiments
 using BSON, StatsModels, DataFrames, Random, LinearAlgebra, Distributions,
       HypothesisTests, DataFramesMeta, Unitful, StatsBase, CodecZstd
 
-export run!, aggregate, statistical_tests, results, nbirds, target
+export run!, summarize, statistical_tests, results, nbirds, target
 
 include("language.jl")
 include("experiments.jl")
@@ -20,7 +20,11 @@ for filename in readdir(joinpath(@__DIR__, "protocols"))
 end
 
 run!(name::Symbol, models) = run!(EXPERIMENTS[name], models)
-aggregate(name::Symbol, data) = aggregate(EXPERIMENTS[name], data)
+summarize(name::Symbol, data) = summarize(EXPERIMENTS[name], data)
+function summarize(e::Experiment, data)
+    ag = _summarize(e, data)
+    sort!(ag, default_keycols(ag))
+end
 statistical_tests(name::Symbol, data) = statistical_tests(EXPERIMENTS[name], data)
 results(name::Symbol, data) = results(EXPERIMENTS[name], data)
 nbirds(name::Symbol) = nbirds(EXPERIMENTS[name])

@@ -3,7 +3,7 @@
 # californica) Journal of Experimental Psychology: Animal Behavior Processes,
 # 1:14-22
 
-function aggregate(exp::Experiment{:Clayton03_exp1}, results)
+function _summarize(exp::Experiment{:Clayton03_exp1}, results)
     res = similar(exp.data, 0)
     for g in groupby(@where(results, :action .== "cache", :set .== 7),
                      [:foodtype, :set])
@@ -98,7 +98,7 @@ function run!(::Experiment{:Clayton03_exp1}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton03_exp2}, results)
+function _summarize(::Experiment{:Clayton03_exp2}, results)
     res = combine(groupby(@where(results, :action .== "inspect"),
                           [:group, :foodtype, :action, :condition, :RI]),
              d -> DataFrame(action = "inspect", μ = mean(d.counts),

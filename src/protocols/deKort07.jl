@@ -5,7 +5,7 @@
 # http://dx.doi.org/10.1037/0097-7403.33.4.361
 #
 
-function aggregate(::Experiment{:deKort07_exp1}, results)
+function _summarize(::Experiment{:deKort07_exp1}, results)
 	combine(groupby(results, [:exp, :group, :action, :trial]),
 				 df -> DataFrame(μ = mean(df.cache), sem = sem(df.cache)))
 end
@@ -68,7 +68,7 @@ function run!(exp::Experiment{:deKort07_exp1}, models; N = 16, samemodels = fals
 	results
 end
 
-function aggregate(::Experiment{:deKort07_exp2}, results)
+function _summarize(::Experiment{:deKort07_exp2}, results)
 	combine(groupby(results, [:exp, :tray, :action, :trial]),
 				 df -> DataFrame(μ = mean(df.cache), sem = sem(df.cache)))
 end
@@ -158,7 +158,7 @@ function run!(exp::Experiment{:deKort07_exp2}, models; Na = 10, Nb = 8, N = 0, s
 	results
 end
 
-function aggregate(::Experiment{:deKort07_exp3}, results)
+function _summarize(::Experiment{:deKort07_exp3}, results)
 	combine(groupby(results, [:tray, :trial, :action]),
 				 df -> DataFrame(μ = mean(df.cache), sem = sem(df.cache)))
 end
@@ -223,7 +223,7 @@ function run!(exp::Experiment{:deKort07_exp3}, models; N = 7)
 	results
 end
 
-function aggregate(::Experiment{:deKort07_exp4}, results)
+function _summarize(::Experiment{:deKort07_exp4}, results)
 	combine(groupby(results, [:exp, :group, :action, :tray]),
 				 df -> DataFrame(μ = mean(df.cache), sem = sem(df.cache)))
 end

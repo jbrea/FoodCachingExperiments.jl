@@ -2,7 +2,7 @@
 # Scrub Jays (Aphelocoma coerulescens), Journal of Experimental Psychology:
 # Animal Behavior Processes, 1: 82 - 91
 
-function aggregate(::Experiment{:Clayton99A_exp1}, data)
+function _summarize(::Experiment{:Clayton99A_exp1}, data)
     combine(groupby(data, [:trial, :tray, :action]),
        df -> DataFrame(μ = mean(df.counts),
                        sem = sem(df.counts),
@@ -103,7 +103,7 @@ function run!(::Experiment{:Clayton99A_exp1}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton99A_exp2}, data)
+function _summarize(::Experiment{:Clayton99A_exp2}, data)
     combine(groupby(data, [:side, :action, :tray]),
        df -> DataFrame(μ = mean(df.counts),
                        sem = sem(df.counts),

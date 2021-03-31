@@ -20,7 +20,13 @@ mutable struct FoodItem
     eatable::Bool
     cacheable::Bool
 end
-Base.:(==)(f1::FoodItem, f2::FoodItem) = f1.id == f2.id && f1.freshness == f2.freshness && f1.eatable == f2.eatable && f1.cacheable == f2.cacheable
+function Base.:(==)(f1::FoodItem, f2::FoodItem)
+    f1.id == f2.id &&
+    f1.n == f2.n &&
+    f1.freshness == f2.freshness &&
+    f1.eatable == f2.eatable &&
+    f1.cacheable == f2.cacheable
+end
 (id::Food)(n = 1, cacheable = true, eatable = id != Stone, freshness = 1.) = FoodItem(id, n, freshness, eatable, cacheable)
 for foodtype in instances(Food)
     powderedform = Symbol(:Powdered, foodtype)
@@ -45,6 +51,13 @@ mutable struct Tray
 	closed::Bool
 	eatableitems::Array{FoodItem, 1}
 end
+function Base.:(==)(x::Tray, y::Tray)
+    x.appearance == y.appearance &&
+    x.position == y.position &&
+    x.closed == y.closed &&
+    x.eatableitems == y.eatableitems
+end
+
 Tray(p = 0, a = rand(Int); closed = false) = Tray(a, p, closed, FoodItem[])
 degrade!(tray::Tray) = degrade!(tray, 0)
 function degrade!(tray::Tray, foodtype)
@@ -73,7 +86,10 @@ add!(model, objects::AbstractVector) = add!.(Ref(model), objects)
 add!(list::Vector{FoodItem}, typ, n) = add!(list, typ(n))
 function add!(list::Vector{FoodItem}, new_item::FoodItem; only_push = false)
     for item in list
-        if item == new_item
+        if item.id == new_item.id &&
+           item.freshness == new_item.freshness &&
+           item.eatable == new_item.eatable &&
+           item.cacheable == new_item.cacheable
             only_push || (item.n += new_item.n)
             return list
         end

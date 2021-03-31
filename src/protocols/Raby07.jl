@@ -2,7 +2,7 @@
 # for the future by western scrub-jays, Nature 445:919-921, 2007,
 # http://dx.doi.org/10.1038/nature05575
 
-function aggregate(::Experiment{:Raby07_planningforbreakfast}, data)
+function _summarize(::Experiment{:Raby07_planningforbreakfast}, data)
     combine(groupby(data, [:tray, :action]),
 				df -> DataFrame(μ = mean(df.items), sem = sem(df.items)))
 end
@@ -51,7 +51,7 @@ function run!(exp::Experiment{:Raby07_planningforbreakfast}, models; N = 8)
 	results
 end
 
-function aggregate(::Experiment{:Raby07_breakfastchoice}, results)
+function _summarize(::Experiment{:Raby07_breakfastchoice}, results)
 	combine(groupby(results, [:tray, :action, :foodtype]),
 				df -> DataFrame(μ = mean(df.items), sem = sem(df.items)))
 end

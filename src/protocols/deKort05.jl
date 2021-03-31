@@ -2,7 +2,7 @@
 # cognition by food-caching western scrub-jays, Learning and Motivation
 # 36:159-176
 
-function aggregate(::Experiment{:deKort05}, results)
+function _summarize(::Experiment{:deKort05}, results)
     datainspectpeanut = @where(results, :action .== "inspect", :foodtype .== "peanut")
     datainspectwaxworm = @where(results, :action .== "inspect", :foodtype .== "other")
     data = @transform datainspectwaxworm counts = datainspectwaxworm.counts ./

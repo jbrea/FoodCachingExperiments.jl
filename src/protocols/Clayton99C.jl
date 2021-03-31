@@ -2,7 +2,7 @@
 # behaviour in the scrub jay (Aphelocoma coerulescens), Animal Behaviour,
 # 2:435-444
 
-function aggregate(::Experiment{:Clayton99C_exp1}, results)
+function _summarize(::Experiment{:Clayton99C_exp1}, results)
     combine(groupby(results, [:group, :foodtype, :action, :stage]),
        df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),
                        n = length(df.counts)))
@@ -136,7 +136,7 @@ function run!(::Experiment{:Clayton99C_exp1}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton99C_exp2}, results)
+function _summarize(::Experiment{:Clayton99C_exp2}, results)
     combine(groupby(results, [:group, :action, :stage]),
        df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),
                        n = length(df.counts)))
@@ -216,7 +216,7 @@ function run!(::Experiment{:Clayton99C_exp2}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton99C_exp3}, results)
+function _summarize(::Experiment{:Clayton99C_exp3}, results)
     combine(groupby(results, [:group, :action]),
        df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),
                        n = length(df.counts)))

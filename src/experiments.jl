@@ -35,8 +35,7 @@ function results(da, data, tests, ::Any)
 end
 function results(da::Base.RefValue, data, tests, e::Experiment{K}) where K
     ks = default_keycols(data)
-    targetdf = K ∈ (:Cheke11_specsat, :Cheke11_planning) ?
-               sort!(aggregate(e, e.data), ks) : e.data
+    targetdf = K ∈ (:Cheke11_specsat, :Cheke11_planning) ? summarize(e, e.data) : e.data
     if dropmissing(data[!,ks]) != dropmissing(targetdf[!,ks])
         @warn K data[!,ks] targetdf[!,ks]
     end
@@ -56,8 +55,7 @@ function results(da::Base.RefValue, data, tests, e::Experiment{K}) where K
 end
 function results(e, data)
     tests = statistical_tests(e, data)
-    ag = aggregate(e, data)
-    sort!(ag, default_keycols(ag))
+    ag = summarize(e, data)
     results(e.data_accessor, ag, tests, e)
 end
 function results(e::Experiment{:Clayton0103}, data)

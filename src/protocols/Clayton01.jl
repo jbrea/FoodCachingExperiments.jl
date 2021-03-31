@@ -8,8 +8,8 @@
 
 const CLAYTON0103_EXPERIMENTS = (:Clayton01_exp1, :Clayton01_exp2, :Clayton01_exp3,
                                  :Clayton01_exp4, :Clayton03_exp1, :Clayton03_exp2)
-function aggregate(::Experiment{:Clayton0103}, results)
-    [aggregate(EXPERIMENTS[key], res)
+function summarize(::Experiment{:Clayton0103}, results)
+    [summarize(EXPERIMENTS[key], res)
      for (key, res) in zip(CLAYTON0103_EXPERIMENTS, results)]
 end
 function _score(exp::Experiment{:Clayton0103}, result, metric)
@@ -37,7 +37,7 @@ function cricketproportions(results)
                                 1e-16) # I prefer 0 if no site is ever inspected over NaN because NaN propagates and may lead to NaN scores.
     pcinspectcricket
 end
-function aggregate(::Experiment{:Clayton01_exp1}, results)
+function _summarize(::Experiment{:Clayton01_exp1}, results)
     res = combine(groupby(@where(results, :action .== "inspect", :set .!= 0,
                                  (|).(:foodtype .!= "other", :set .== 5)),
                           [:group, :foodtype, :action, :RI, :trial, :set]),
@@ -227,7 +227,7 @@ function run!(::Experiment{:Clayton01_exp1}, models)
 end
 
 
-function aggregate(::Experiment{:Clayton01_exp2}, results)
+function _summarize(::Experiment{:Clayton01_exp2}, results)
     res = combine(groupby(@where(results, :action .== "inspect", :set .!= 0),
                           [:group, :foodtype, :action, :RI, :trial, :set]),
              df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),
@@ -321,7 +321,7 @@ function run!(::Experiment{:Clayton01_exp2}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton01_exp3}, results)
+function _summarize(::Experiment{:Clayton01_exp3}, results)
     res = [combine(groupby(@where(results, :action .== "inspect", :set .== 1),
                            [:group, :foodtype, :action, :trial]),
              df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),
@@ -426,7 +426,7 @@ function run!(::Experiment{:Clayton01_exp3}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton01_exp4}, results)
+function _summarize(::Experiment{:Clayton01_exp4}, results)
     res = [combine(groupby(@where(results, :action .== "inspect", :set .== 1),
                            [:group, :foodtype, :action, :RI]),
              df -> DataFrame(μ = mean(df.counts), sem = sem(df.counts),

@@ -3,7 +3,7 @@
 # the Conditions at Recovery. Journal of Experimental Psychology: Animal
 # Behavior Processes, 2:115-124
 
-function aggregate(::Union{Experiment{:Clayton05_exp1}, Experiment{:Clayton05_exp2}},
+function _summarize(::Union{Experiment{:Clayton05_exp1}, Experiment{:Clayton05_exp2}},
                        data)
     combine(groupby(data, [:group, :trial, :action, :foodtype]),
 	   df -> DataFrame(μ = mean(df.items), sem = sem(df.items)))
@@ -271,7 +271,7 @@ function run!(::Experiment{:Clayton05_exp2}, models)
     results
 end
 
-function aggregate(::Experiment{:Clayton05_exp3}, results)
+function _summarize(::Experiment{:Clayton05_exp3}, results)
     res = combine(groupby(results, [:group, :trial, :action, :foodtype]),
        d -> DataFrame(μ = mean(d.items), n = length(d.items)))
     for foodtype in ("pineapple", "salami")
@@ -356,7 +356,7 @@ function run!(::Experiment{:Clayton05_exp3}, models)
 end
 
 
-function aggregate(::Experiment{:Clayton05_exp4}, results)
+function _summarize(::Experiment{:Clayton05_exp4}, results)
     combine(groupby(results, [:trial, :action, :foodtype]),
         d -> DataFrame(μ = mean(d.items), n = length(d.items)))
 end
