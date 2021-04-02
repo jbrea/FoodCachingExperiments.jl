@@ -67,3 +67,15 @@ function results(e::Experiment{:Clayton0103}, data)
     end
     res
 end
+function asdataframe(e::Experiment{K}, x, k = Ref(0)) where K
+    data = K ∈ (:Cheke11_specsat, :Cheke11_planning) ? summarize(e, e.data) : deepcopy(e.data)
+    for (col, idx) in e.data_accessor
+        data[idx, col] .= x[k[]+1:k[]+length(idx)]
+        k[] += length(idx)
+    end
+    tests = x[k[]+1:length(e.target)]
+    data, tests
+end
+function asdataframe(::Experiment{:Clayton0103}, x, k = Ref(0))
+    [asdataframe(e, x, k) for e in CLAYTON0103_EXPERIMENTS]
+end

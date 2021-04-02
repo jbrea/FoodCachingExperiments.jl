@@ -30,6 +30,7 @@ results(name::Symbol, data) = results(EXPERIMENTS[name], data)
 nbirds(name::Symbol) = nbirds(EXPERIMENTS[name])
 target(name::Symbol) = target(EXPERIMENTS[name])
 foodtypes(name::Symbol) = foodtypes(EXPERIMENTS[name])
+asdataframe(name::Symbol, x, k = Ref(0)) = asdataframe(EXPERIMENTS[name], x, k)
 
 function __init__()
     filename = joinpath(@__DIR__, "..", "data", "processed", "experiments.bson.zstd")
