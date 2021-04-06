@@ -157,17 +157,20 @@ pvalues(::Any, c::AbstractSimpleTest, ::Any) = [c.p]
 df(::Any, c::AbstractSimpleTest, ::Any) = ""
 pvalues(a, c::DataFrame, ::Any) = c.p[a]
 df(a, c::DataFrame, ::Any) = map(x -> "$(c.DF[x]),$(c.DF[end])", a)
-pvalues(a, c::Vector{DataFrame}, ::Any) = vcat([t.p[i] for (t, i) in zip(c, a)]...)
-df(a, c::Vector{DataFrame}, x::Any) = vcat([isempty(i) ? [] : df(i, t, x) for (t, i) in zip(c, a)]...)
+pvalues(a, c::Vector{DataFrame}, ::Any) = vcat([c[i].p[idx] for (i, idx) in a]...)
+df(a, c::Vector{DataFrame}, x::Any) = vcat([df([idx], c[i], x) for (i, idx) in a]...)
 function pvalues(a::Base.RefValue, c::DataFrame, t)
     a[] = map(name -> findfirst(x -> x == name, c.names), t.keys)
     pvalues(a[], c, t)
 end
-dropnothing(l) = convert(Vector{Int}, filter(x -> x !== nothing, l))
+function accessor_tuple(k, c)
+    for (i, d) in enumerate(c)
+       idx = findfirst(x -> x == k, d.names)
+       idx === nothing || return (i, idx)
+    end
+end
 function pvalues(a::Base.RefValue, c::Vector{DataFrame}, t)
-    a[] = [map(name -> findfirst(x -> x == name, d.names), t.keys) |> dropnothing
-           for d in c]
-    length(vcat(a[]...)) == length(t.keys) || @warn t.keys
+    a[] = [accessor_tuple(k, c) for k in t.keys]
     pvalues(a[], c, t)
 end
 
