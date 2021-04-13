@@ -275,6 +275,7 @@ function run!(::Experiment{:Clayton99C_exp3}, models; samebirds = true)
     for i in 1:23
         id += 1
         m = models[id]
+        add!(m, MaintenanceDiet)
         wait!(m, 100u"d")
         for day in 1:2
             remove!(m, Any)
