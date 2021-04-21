@@ -19,6 +19,7 @@ TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
+DataFramesMeta = "0.6"
 Unitful = "1.7"
 StatsBase = "0.33"
 CSV = "0.8"
