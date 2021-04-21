@@ -20,6 +20,8 @@ Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
 StatsModels = "0.6"
+Distributions = "0.24"
+HypothesisTests = "0.10"
 julia = "1.5"
 
 [extras]
