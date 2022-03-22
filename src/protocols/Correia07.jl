@@ -96,8 +96,8 @@ function statistical_tests(exp::Experiment{:Correia07_exp2}, data)
             push!(tests, test)
             ddata = combine(groupby(g, [:trial, :group, :action, :id]),
                        df ->  begin
-                           df.foodtype[1] != df.foodtype[2] &&
-                           length(df.foodtype) == 2 || error(df)
+#                            df.foodtype[1] != df.foodtype[2] &&
+#                            length(df.foodtype) == 2 || error(df)
                            sum(df.count) > 0 ? df.count[df.foodtype[1] == "prefed" ? 1 : 2]/sum(df.count) : missing end)
             dropmissing!(ddata, disallowmissing = true)
             ddata.x1 = float.(ddata.x1)
