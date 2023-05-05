@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/jbrea/FoodCachingExperiments.jl/master/fig1.png" />
 </p>
 
-# Simulate Food Caching Experiments in Julia and Python
+## Simulate Food Caching Experiments in Julia and Python
 
 The code in this repository defines a domain specific language to describe food
 caching experiments. This repository is a submodule of [FoodCaching](https://github.com/jbrea/FoodCaching).
